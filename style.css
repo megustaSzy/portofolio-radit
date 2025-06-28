@@ -234,39 +234,38 @@ section {
 }
 
 .profile-image {
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-      background: linear-gradient(45deg, #00ffff, #ff00ff);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto;
-      position: relative;
-      overflow: hidden;
-    }
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #00ffff, #ff00ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
 
-    .profile-image::after {
-      content: "";
-      position: absolute;
-      top: 5px;
-      left: 5px;
-      right: 5px;
-      bottom: 5px;
-      background: #1a1a2e;
-      border-radius: 50%;
-      z-index: -1;
-    }
+.profile-image::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: #1a1a2e;
+  border-radius: 50%;
+  z-index: -1;
+}
 
-    .profile-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-      position: relative;
-      z-index: 1;
-    }
-
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
 .about-text {
   font-size: 1.1rem;
   line-height: 1.8;
@@ -496,107 +495,107 @@ section {
 ------------------------- */
 
 .experience-timeline {
-    display: grid;
-    grid-template-columns: 1fr; /* Setiap kartu mengambil satu baris penuh */
-    gap: 2.5rem; /* Jarak antar kartu */
-    position: relative;
-    max-width: 800px; /* Batasi lebar agar lebih mudah dibaca */
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr; /* Setiap kartu mengambil satu baris penuh */
+  gap: 2.5rem; /* Jarak antar kartu */
+  position: relative;
+  max-width: 800px; /* Batasi lebar agar lebih mudah dibaca */
+  margin: 0 auto;
 }
 
 /* Garis vertikal di tengah (opsional, untuk estetika timeline) */
 .experience-timeline::before {
-    content: '';
-    position: absolute;
-    left: 20px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: rgba(0, 255, 255, 0.2);
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(0, 255, 255, 0.2);
 }
 
 .experience-card {
-    /* Menggunakan gaya yang sama persis dengan .skill-card */
-    background: rgba(255, 255, 255, 0.05);
-    padding: 2rem;
-    border-radius: 15px;
-    border: 1px solid rgba(0, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
-    position: relative;
-    padding-left: 4rem; /* Ruang untuk ikon di garis timeline */
+  /* Menggunakan gaya yang sama persis dengan .skill-card */
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: relative;
+  padding-left: 4rem; /* Ruang untuk ikon di garis timeline */
 }
 
 /* Efek hover yang konsisten */
 .experience-card:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(0, 255, 255, 0.2);
-    border-color: rgba(0, 255, 255, 0.5);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 255, 255, 0.2);
+  border-color: rgba(0, 255, 255, 0.5);
 }
 
 /* Ikon pada garis timeline */
 .experience-card::before {
-    content: '💼'; /* Ganti dengan ikon lain jika suka, misal: 🌐, 🛡️ */
-    position: absolute;
-    left: 0;
-    top: 2rem;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: linear-gradient(45deg, #1a1a2e, #16213e);
-    border: 2px solid #00ffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
+  content: "💼"; /* Ganti dengan ikon lain jika suka, misal: 🌐, 🛡️ */
+  position: absolute;
+  left: 0;
+  top: 2rem;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #1a1a2e, #16213e);
+  border: 2px solid #00ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
 }
 
 .experience-card h3 {
-    font-size: 1.5rem;
-    color: #00ffff;
-    margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: #00ffff;
+  margin-bottom: 0.5rem;
 }
 
 .experience-meta {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .experience-meta .location {
-    font-style: italic;
-    color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .experience-date {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 1.5rem;
-    font-style: italic;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 1.5rem;
+  font-style: italic;
 }
 
 .experience-duties {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 .experience-duties li {
-    padding-left: 1.5rem;
-    position: relative;
-    margin-bottom: 0.75rem;
-    line-height: 1.6;
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
 }
 
 /* Bullet points kustom yang sesuai tema */
 .experience-duties li::before {
-    content: '»';
-    position: absolute;
-    left: 0;
-    color: #00ffff;
-    font-weight: bold;
+  content: "»";
+  position: absolute;
+  left: 0;
+  color: #00ffff;
+  font-weight: bold;
 }
